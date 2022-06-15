@@ -64,8 +64,8 @@ export class Todo {
     const list = document.querySelector('.list');
     let str = '';
     todoList.forEach((todo) => {
-      str += `<li class="list-item">
-            <div class="form-group">
+      str += `<li class="list-item flex-space-between">
+            <div class="form-group flex-center align-center">
             <input type="checkbox" id="${todo.index}" value="${todo.description}" class="checkbox">
             <textarea class="textarea">${todo.description}</textarea>
           </div>
